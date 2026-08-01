@@ -115,4 +115,4 @@ alias osu="cd /home/justin/Downloads/squashfs-root && ./AppRun"
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias zsh="nano ~/.zshrc"
 alias szsh="source ~/.zshrc"
-alias gsync="python3 ~/dotfiles/gsync.py"
+alias gsync="cd ~/dotfiles && python3 ~/dotfiles/gsync.py"
