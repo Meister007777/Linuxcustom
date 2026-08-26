@@ -30,6 +30,7 @@ else:
         print_banner("szsh")
         print_banner("gsync")
     elif user_input == "Tools":
+        print_banner("Proxy %ipv4%")
         print_banner("tmole %port%")
     else:
         print_banner(f"Unbekannter Befehl: {user_input}")
