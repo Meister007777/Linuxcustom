@@ -17,7 +17,7 @@ def main():
     # 2. Prüfen, ob es überhaupt Änderungen zum Committen gibt
     status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
     if not status.stdout.strip():
-        print("✨ Alles up-to-date! Es gibt keine neuen Änderungen zum Hochladen.")
+        print("Alles up-to-date! Es gibt keine neuen Änderungen zum Hochladen.")
         return
 
     # 3. Commit-Nachricht holen

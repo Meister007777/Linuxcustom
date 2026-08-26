@@ -17,6 +17,7 @@ if len(sys.argv) == 1:
     print_banner("Commands")
     print_banner("- Apps")
     print_banner("- shortcuts")
+    print_banner("- Tools")
 else:
     # Argumente zu einem Text zusammenfügen
     user_input = " ".join(sys.argv[1:])
@@ -28,5 +29,7 @@ else:
         print_banner("zsh")
         print_banner("szsh")
         print_banner("gsync")
+    elif user_input == "Tools":
+        print_banner("tmole %port%")
     else:
         print_banner(f"Unbekannter Befehl: {user_input}")

@@ -102,7 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+export PATH=$PATH:$(go env GOPATH)/bin
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Start
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 fastfetch
@@ -120,3 +122,12 @@ alias osu="cd ~/Downloads/squashfs-root && ./AppRun"
 alias zsh="nano ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias gsync="cd ~/dotfiles && python3 ~/dotfiles/gsync.py"
+alias proxyon="ssh -i ~/.ssh/id_ed25519 -D 1080 -N -f root@1"
+
+
+
+
+# Generated for pdtm. Do not edit.
+export PATH=$PATH:/home/justin/.pdtm/go/bin
+
+export PATH="$HOME/.pdtm/go/bin:$PATH"
