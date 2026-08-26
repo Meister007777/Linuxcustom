@@ -1,5 +1,6 @@
 import subprocess
 import sys
+import pyfiglet
 
 if len(sys.argv) < 2:
     print("Es wird eine Ipv4 erwartet")
