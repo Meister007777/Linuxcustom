@@ -2,30 +2,29 @@
 import pyfiglet
 import sys
 
-# Farben für das Terminal definieren
+# Define terminal colors
 GREEN = "\033[1;32m"
 RESET = "\033[0m"
 
-# Funktion für das Banner
+# Function to render the banner
 def print_banner(text):
     banner = pyfiglet.figlet_format(text, font="slant")
     print(f"{GREEN}{banner}{RESET}")
 
-# Argumente auswerten
+# Evaluate CLI arguments
 if len(sys.argv) == 1:
-
     print_banner("Commands")
     print_banner("- Apps")
-    print_banner("- shortcuts")
+    print_banner("- Shortcuts")
     print_banner("- Tools")
 else:
-    # Argumente zu einem Text zusammenfügen
+    # Combine arguments into a single string
     user_input = " ".join(sys.argv[1:])
     
-    # Befehle prüfen
+    # Check commands
     if user_input == "Apps":
         print_banner("osu")
-    elif user_input == "shortcuts":
+    elif user_input == "shortcuts" or user_input == "Shortcuts":
         print_banner("zsh")
         print_banner("szsh")
         print_banner("gsync")
@@ -33,4 +32,4 @@ else:
         print_banner("Proxy %ipv4%")
         print_banner("tmole %port%")
     else:
-        print_banner(f"Unbekannter Befehl: {user_input}")
+        print_banner(f"Unknown Command: {user_input}")
