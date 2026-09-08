@@ -3,7 +3,7 @@ import sys
 import pyfiglet
 
 if len(sys.argv) < 2:
-    print("Es wird eine Ipv4 erwartet")
+    print("Error: An IPv4 address is required.")
     sys.exit(1)
 
 server_ip = sys.argv[1]
@@ -18,6 +18,6 @@ ssh_command = [
 ]
 try:
     subprocess.run(ssh_command, check=True)
-    print("SSH-Tunnel Erfolgreich {server_ip}:1080")
+    print(f"SSH Tunnel successfully established at {server_ip}:1080")
 except subprocess.CalledProcessError:
-    print("Fehler beim starten")
+    print("Error: Failed to start the SSH tunnel.")
